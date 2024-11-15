@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>South</title>
+<style>
+/* Basic Reset */
+{box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body { font-family: 'Poppins', sans-serif;
+background-color: #f0f0f0;
+color: #333;
+}
+p {
+font-size: 20px;
+}
+/* Hero Section */
+.hero-section {
+position: relative;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+text-align: center;
+}
+.background {
+position: absolute;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+.background-image {
+width: 100%;
+height: 100%;
+object-fit: cover;
+filter: brightness(0.6); /* Darken the background */
+}
+.hero-content {
+position: relative;
+z-index: 2;
+}
+.hero-title {
+font-size: 48px;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+.hero-subtitle {
+font-size: 24px;
+margin-bottom: 30px;
+}
+.image-row {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.image-row figure {
+margin-bottom: 30px;
+}
+.image-row div {
+position: relative;
+width: 70px;
+margin: 10px;
+}
+.image-row img {
+max-width: 80%;
+height: auto;
+transition: transform 0.1s;
+}
+.image-row img:hover {
+transform: scale(1.04);
+}
+.hero-button {
+background-color: #ff6b6b;
+color: #fff;
+padding: 15px 30px;
+margin: 5px;
+border: none;
+border-radius: 5px;
+text-decoration: none;
+font-size: 16px;
+transition: background-color 0.3s;
+}
+.hero-button:hover {
+background-color: #ff4a4a; /* Darker shade on hover */
+}
+/* Main Content Styles */
+main {
+padding: 40px 10vw;
+}
+.content-section {
+margin-bottom: 40px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 20px;
+}
+.content-section h2 {
+font-size: 28px;
+margin-bottom: 15px;
+}
+.content-section h3 {
+font-size: 22px;
+margin: 10px 0;
+color: #161813;
+background-color: #6B8E3E;
+padding : 5px;
+}
+.content-section p {
+margin-bottom: 15px;
+}
+.content-section ul {
+list-style: none;
+padding-left: 0;
+}
+.content-section li {
+margin-bottom: 10px;
+}
+/* Video Styles */
+video {
+display: block;
+max-width: 60%;
+max-height: 60%;
+border-radius: 10px;
+margin: 20px 0;
+}
+li { background-color: #6B8E3E; /* Light greenish background */
+margin: 10px 0;
+padding: 15px;
+border-radius: 5px;
+transition: background-color 0.2s; /* Transition for color change */
+}
+li:hover {background-color: #5E7D36; /* Slightly darker green on hover */
+}
+/* Form Styles */
+form {
+margin: 40px 0;
+background-color: #fff;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form textarea {
+width: 90%;
+height: 100px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: 1px solid #ddd;
+padding: 10px;
+}
+form input[type="submit"] {
+background-color: #ff6b6b;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+form input[type="submit"]:hover {
+background-color: #ff4a4a; /* Darker shade on hover */
+}
+</style>
+</head>
+<body>
+<section class="hero-section">
+<div class="background">
+<img src="Img/south_img.jpeg" alt="Beautiful South" class="background-image">
+</div>
+<div class="hero-content">
+<h1 class="hero-title">Discover the Beauty of South</h1>
+<p class="hero-subtitle">Explore the culture, event, and more</p>
+<a href="#dance" class="hero-button">Get Started</a>
+<a href="index.html" class="hero-button">Back Home</a>
+</div>
+</section>
+
+<main>
+<section id ="dance" class="content-section">
+<h2>Folk Dances</h2>
+<h3>Al-Kutwa Al-Junoobiya</h3>
+<p>It is an ancient war dance and one of the southern Saudi dances. It is distinguished by its diversity of melodies and calm rhythm in a way that makes it easy to perform the dance is widespread and famous in the Asir region.</p>
+<video controls>
+<source src="Kutwa.mp4" type="video/mp4">
+</video>
+</section>
+
+<section id="events" class="content-section">
+<h2>Where to go ?</h2>
+<div class="image-row">
+<figure>
+<h3> Rijal Al Maa Heritage Village </h3>
+<img src="Img/rejal-aseer-almaa.webp" alt="Rijal Al Maa Heritage Village">
+<figcaption><strong>A historical village known for its unique architecture and cultural heritage</figcaption>
+</figure>
+
+<figure>
+<h3> Writers and Readers Festival </h3>
+<img src="Img/WR Festival.jpeg" alt="Writers and Readers Festival">
+<figcaption><strong>lively event celebrating literature with book readings, discussions, and workshops</figcaption>
+</figure>
+
+<figure>
+<h3>Tourist Grape Farm</h3>
+<img src="Img/farm.webp" alt="Tourist Grape Farm">
+<figcaption><strong>Enjoy a peaceful stroll through vibrant orchards. Relax and have refreshments in Asir’s beautiful nature</figcaption>
+</figure>
+
+<figure>
+<h3>Al Baha Summer Festival</h3>
+<img src="Img/Albaha.jpg" alt="Al Baha Summer Festival">
+<figcaption><strong>Experience Al Baha’s rich culture and nature at the Summer Festival with local crafts, food, and exhibitions</figcaption>
+</figure>
+
+<figure>
+<h3>Art Street</h3>
+<img src="Img/art-street.webp" alt="Art Street">
+<figcaption><strong>Brimming with colors and creativity, experience the works of local artists in an extraordinary journey beyond the ordinary</figcaption>
+</figure>
+
+<figure>
+<h3>Asir National Park</h3>
+<img src="Img/asser-bark.jpg" alt="Asir National Park">
+<figcaption><strong>beautiful park offering hiking trails, picnic spots, and stunning views of the mountains</figcaption>
+</figure>
+</div>
+</section>
+
+<section id="restaurants" class="content-section">
+<h2>Restaurants</h2>
+<ul>
+<li><strong> Al-Qaryah Al-Sha'biyyah (Abha)</strong> - Offers traditional dishes in a heritage atmosphere. (4.5/5) </li>
+<li><strong> Al-Saada (Abha) </strong> - Famous for seafood and grilled dishes. (4.3/5) </li>
+<li><strong>Al-Saraya (Khamis Mushait)</strong> - Serves a variety of Arabic dishes. (4.4/5) </li>
+<li><strong> Fatoor Faris (Abha)</strong> -Offer diverse and delicious breakfast. (4.5/5) </li>
+<li><strong> Al-Multaqa (Abha)</strong> - Offers diverse dishes from local cuisine. (4.2/5) </li>
+<li><strong> La Terrazza (Khamis Mushait)</strong> -  Serves authentic Italian dishes with a beautiful view. (4.4/5) </li>
+<li><strong>Al-Shuhada Restaurant (Jazan)</strong> - Specializes in seafood and traditional Jazan dishes. (4.5/5)</li>
+</ul>
+</section>
+</main>
+
+
+
+<h2>Visitor Experiences</h2>
+<form>
+<label for="experience"> Share Your Experience :</label><br>
+<textarea id="experience" name="experience"></textarea><br>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

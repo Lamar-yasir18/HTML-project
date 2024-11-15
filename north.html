@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>North</title>
+<style>
+/* Main Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e5d0b0; /* Light beige background for body */
+    color: #3c2f2f; /* Dark brown text color */
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5); /* Darken the background */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    background-color: #8b5a2b; /* Medium brown */
+    color: #fff;
+    padding: 15px 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #5d3a2a; /* Darker brown on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 10vw;
+}
+
+/* Content Section */
+.content-section {
+    background-color: #3e2a2a; /* Dark brown background */
+    color: #f5f5dc; /* Light beige text color for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 40px; /* Increased padding for better spacing */
+    margin-bottom: 40px;
+}
+
+/* Content Section Heading */
+.content-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #f5f5dc; /* Light beige for headings */
+    text-align: center;
+}
+
+/* Image Row */
+.image-row {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center;
+}
+
+/* Figures */
+figure {
+    margin: 20px 0;
+    text-align: center;
+    width: 95%; /* Increased width for better presentation */
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+}
+
+/* Captions */
+figcaption {
+    font-size: 16px; /* Increased font size for better readability */
+    color: #e6cfcf; /* Light beige for captions */
+    margin-top: 10px;
+    padding: 10px; /* Added padding for spacing */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    border-radius: 5px;
+}
+
+/* Definition List */
+dl {
+    margin: 20px 0;
+    background-color: #4a3b3b; /* Slightly lighter brown for lists */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+dt {
+    font-weight: bold;
+    color: #f5f5dc; /* Light beige */
+}
+
+dd {
+    margin-bottom: 10px;
+    color: #f5f5dc; /* Light beige */
+}
+
+/* Form Styles */
+form {
+    margin: 40px 0;
+    background-color: #5d4a4a; /* Darker brown */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #f5f5dc; /* Light beige */
+}
+
+form textarea {
+    width: 100%;
+    height: 120px; /* Increased height for textarea */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+    background-color: #8b5a2b; /* Medium brown */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #5d3a2a; /* Darker brown on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+    .hero-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}</style>
+</head>
+<body>
+<section class="hero-section">
+    <div class="background">
+        <img src="Img/alola.png" alt="Beautiful north" class="background-image">
+    </div>
+    <div class="hero-content">
+        <h1 class="hero-title">Explore the magic of history</h1>
+        <p class="hero-subtitle">An incubator for natural beauty and unique human heritage</p>
+        <a href="#attractions" class="hero-button">Get Started</a>
+        <a href="index.html" class="hero-button">Back Home</a>
+    </div>
+</section>
+
+<main>
+
+<section id="events" class="content-section">
+ <h2>Where to go ?</h2>
+  <div class="image-row">
+   <figure>
+   <p> Adventures </p>
+   <img src="Img/Adventures.png" alt="Rijal Al Maa Heritage Village">
+   <figcaption><strong>AlUla welcomes adventure lovers with a variety of exciting activities, day and night, among its stunning desert terrain. Your ultimate outdoor destination for rejuvenation and rejuvenation with experiences designed to awaken the senses, breathtaking among nature's most spectacular attractions.</figcaption>
+   </figure>
+ <dl>
+<dt><strong> Balloon flights </strong> </dt>
+<dd> Draw memories on your trip to AlUla with stunning views from a height of 1,200 metres</dd>
+<dt><strong> Via Ferrata and Hammock Valley Experience </strong>  </dt>
+<dd>A series of challenges through the valley with seatbelts in the air to climb barriers, cut obstacles, and make your way through suspended wooden platforms </dd>
+</dl>
+
+
+   <figure>
+   <p> Recreation </p>
+   <img src="Img/Recreation.png" alt="Recreation">
+   <figcaption><strong>A destination that is beautiful in nature, with a variety of wellness programs and experiences dedicated to mind tranquility, serenity of the soul and health of the body. We invite AlUla's guests to rejuvenate, rejuvenate, and connect with themselves among its wondrous desert terrain.</figcaption>
+   </figure>
+<dl>
+<dt><strong> Yoga and meditation session in AL Harra view </strong> </dt>
+<dd> A session that enriches the soul among the charming natural views</dd>
+</dl>
+
+
+   <figure>
+   <p>Nature</p>
+   <img src="Img/Nature.png" alt="Tourist Grape Farm">
+   <figcaption><strong>With its lush oases, vast deserts and lush valleys, AlUla has provided an ideal environment for diverse wildlife forms of plants, trees and animals. We invite our guests to explore AlUla's exotic natural formations, and enjoy a sense of comfort and inner peace among its stunning terrain.</figcaption>
+    </figure>
+<dl>
+<dt><strong>Exceptional safari tour in Sharaan Nature Reserve </strong> </dt>
+<dd> Discover the beauty of the natural terrain and the magic of history with a special journey between the wondrous rock formations and ancient archaeological inscriptions</dd>
+<dt><strong>Stargazing experience in Gharameel</strong></dt>
+<dd>Explore the magic of the desert and the stars of the sky with the most delicious alfresco grilled cuisine among the rock formations and the stunning desert terrain of Gharameel
+Book with the experience organizer
+</dd>
+</dl>
+
+    </div>
+</section>
+
+</main>
+
+
+
+<h2>Visitor Experiences</h2>
+<form>
+<label for="experience"> Share Your Experience :</label><br>
+<textarea id="experience" name="experience"></textarea><br>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
